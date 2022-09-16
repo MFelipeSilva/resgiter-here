@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;600;700&family=PT+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border:none;
+}
+
+body {
+  background-color:rgb(127, 255, 232);
+}
+
+section {
+  display:flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-container {
+  display:flex;
+  background-color: white;
+  width: 27vw;
+  height: 73vh;
+  border-radius: 0% 1% 1% 0%;
+  box-shadow: 3px 0px 20px -4px rgba(0, 0, 0, 0.266);
+  align-items:center;
+  justify-content:center;
+  flex-direction: column;
+}
+
+.image-container {
+  display: flex;
+  background-color: rgb(197, 244, 236);
+  width: 40vw;
+  height: 73vh;
+  border-radius: 1% 0 0 1%;
+  box-shadow:  0px 0px 9px rgba(0, 0, 0, 0.266);
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container > img {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.formulary-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-field> .class-labels {
+  display: flex;
+  margin:10px 0px 5px 0px;
+}
+
+.information-name {
+  font-family: PT Sans;
+  font-weight:700;
+  font-size: 11pt;
+}
+
+.validating-text {
+  display:block;
+  padding: 0;
+  margin: 0;
+  color: red;
+  font-family: PT Sans;
+  font-style: italic;
+}
+
+.formulary-container > .title-login {
+  color:black;
+  font-family: PT Sans;
+  font-size: 15pt;
+}
+
+.formulary-container > .information-name {
+  margin-bottom: 10px;
+}
+
+.label-field > .information-field {
+  width: 17.5em;
+  padding-left: 30px;
+  padding-right: 5px;
+  height: 2.5em;
+  outline: none;
+  font-size: 10pt;
+  border: 1px solid  rgba(0, 0, 0, 0.227);
+  border-radius: 5px;
+}
+
+.label-field {
+  position: relative;
+}
+
+.label-field > i {
+  position: relative;
+  font-size: 10pt;
+  right: 17em;
+  top: 1px;
+}
+
+.class-input > input {
+  display: none;
+}
+
+.message-option {
+  display: flex;
+}
+
+.message-option > ul {
+  padding-bottom: 6px;
+}
+
+
+.message-option > ul > li {
+  list-style: none;
+}
+
+ul > li > a {
+  display:flex;
+  font-family: PT Sans;
+  font-size: 9pt;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.span-signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.paragraph-signup {
+  font-family: PT Sans;
+  font-weight: 700;
+  font-size: 10pt;
+}
+
+.paragraph-signup > a {
+  color: rgb(0, 132, 255);
+}
+
+.box-verified {
+  display:inline-block;
+  padding-top: 20px;
+}
+
+.box-verified > #check-box2 + .label-checkbox2:before {
+  content: '';
+  display: inline-block;
+  background-color: white;
+  width: 13px;
+  cursor:pointer;
+  height: 13px;
+  border: 1px solid rgba(0, 0, 0, 0.304);
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-right: 6px;
+  margin-bottom: 3px;
+}
+
+.box-verified > input[type=checkbox]:checked + .label-checkbox2:before{
+  background-image: url(/public/img/check-verified.png);
+  background-color: rgb(0, 145, 24);
+}
+
+.box-verified > .label-checkbox2 {
+  font-family: PT Sans;
+  font-size: 10pt;
+}
+
+.message-option > .label-checkbox1 {
+  display:none;
+}
+
+.box-verified > .button-login {
+  width: 8em;
+  padding: 0.8em;
+  margin-right: 20px;
+  border-radius: 40px;
+  color: white;
+  font-size: 11pt;
+  background-color: rgb(0, 110, 255);
+  transition: 0.5s ease-in-out;
+}
+
+.button-login:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 255, 0.859);
+}

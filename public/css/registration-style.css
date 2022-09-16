@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;600;700&family=PT+Sans:wght@400;700&display=swap');
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(45deg, rgb(64, 207, 181), rgb(127, 255, 232));
+}
+
+section {
+  display:flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulary-container {
+  display: flex;
+  width: 35em;
+  height: 48em;
+  border-radius: 2%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.266);
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title-registration {
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 13pt;
+  font-family: PT Sans;
+}
+
+.style-alerts-success {
+  display: flex;
+  position: relative;
+  width: 22em;
+  height: 4em;
+  align-items: center;
+  background-color: #d1e7dd;
+  border-radius: 4px;
+}
+
+.style-alerts-danger {
+  display: flex;
+  position: relative;
+  width: 22em;
+  height: 4em;
+  align-items: center;
+  background-color: #f8d7da;
+  border-radius: 4px;
+}
+
+.icon-success {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  
+  top: 17px;
+  left: 14px;
+}
+
+.icon-danger {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 17px;
+  left: 14px;
+}
+
+.text-alert {
+  margin-left: 40px;
+  font-weight: 400;
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";;
+}
+
+form > .box-content {
+  display:flex;
+  flex-direction: column;
+}
+
+.box-content {
+  padding-top: 15px;
+}
+
+form > .box-content > .label-field {
+  color: rgba(0, 0, 0, 0.849);
+  font-family: PT Sans;
+  font-weight: 700;
+  font-size: 11pt;
+}
+
+form > .box-content > .information-field {
+  width: 20em;
+  height: 2.5em;
+  font-size: 10pt;
+  outline: none;
+  margin-top: 5px;
+  padding-left: 5px;
+  border: 1px solid  rgba(0, 0, 0, 0.227);
+  border-radius: 5px;
+}
+
+form > .button-registration {
+  width: 100%;
+  height: 2.8em;
+  color: white;
+  cursor: pointer;
+  font-size: 11pt;
+  margin-top: 25px;
+  border-radius: 5px;
+  background-color: rgb(0, 110, 255);
+  transition: 0.5s ease-in-out;
+}
+
+.text-redirect {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 50px;
+}
+
+span {
+  display: flex;
+  font-family: PT Sans;
+  font-weight: 700;
+  font-size: 10pt;
+}
+
+.text-redirect > a > .arrow {
+position: relative;
+top: 6px;
+left: 10px;
+width: 20px;
+height: 2px;
+background-color: rgb(0, 132, 255);
+box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+}
+
+.arrow::after, .arrow::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  right: -3px;
+  background-color: rgb(0, 132, 255);
+}
+
+.arrow::after {
+  top: -3px;
+  transform: rotate(50deg);
+}
+
+.arrow::before {
+  top: 3.5px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  transform: rotate(-50deg);
+}
+
+.arrow:hover {
+  cursor: pointer;
+  animation: arrow 700ms linear infinite;
+}
+
+.button-registration:hover {
+  background-color: rgba(0, 0, 255, 0.859);;
+}
+
+@keyframes arrow {
+  0% {
+    left: 10px;
+  }
+  
+  50% {
+    left: 20px;
+  }
+  
+  100% {
+    left: 10px;
+  }  
+}
+
+@media (min-height: 1080px)
+{
+  .formulary-container {
+    width: 24vw;
+    height: 60vh;
+  }
+}

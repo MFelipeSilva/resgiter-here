@@ -1,0 +1,115 @@
+
+.image-container {
+  display:none;
+}
+  
+.box-container {
+  display:flex;
+  width: 60%;
+  border-radius: 1%;
+  box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.266);
+  align-items:center;
+  justify-content: center;
+  
+}
+
+.formulary-container {
+  display:flex;
+  width: 45%;
+  flex-direction: column;
+}
+
+.label-field > .information-field {
+  width:100%;
+}
+
+.label-field > i {
+  display:none;
+}
+
+.message-option {
+  display:grid;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr)
+}
+
+.message-option > .label-checkbox1 {
+  display: block;
+  font-family: PT Sans;
+  font-size: 9pt;
+}
+
+.message-option > #check-box1 + .label-checkbox1:before {
+  content: '';
+  display: inline-block;
+  background-color: white;
+  width: 12px;
+  cursor:pointer;
+  height: 11px;
+  border: 1px solid rgba(0, 0, 0, 0.304);
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-right: 2px;
+  margin-bottom: 1px;
+}
+
+.message-option > input[type=checkbox]:checked + .label-checkbox1:before{
+  background-image: url(/img/check-verified.png);
+  background-color: rgb(0, 145, 24);
+}
+
+.message-option > .label-checkbox1 {
+  display:block;
+}
+
+ul > li > a {
+  font-size: 9pt;
+  align-items: flex-end;
+}
+
+.box-verified {
+  display: flex;
+  
+}
+
+.box-verified > .button-login {
+  width: 100%;
+  margin-right: 0px;
+} 
+
+.box-verified > input + .label-checkbox2:before {
+  display: none;
+}
+
+.box-verified > .label-checkbox2 {
+  display: none;
+}
+
+@media all and (max-width: 730px) {
+  
+  .box-container {
+    display:flex;
+    width: 65vw;
+  }
+
+  .formulary-container {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 570px) {
+  .box-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .formulary-container {
+    display:flex;
+    width: 55%;
+    flex-direction: column;
+  }
+
+}

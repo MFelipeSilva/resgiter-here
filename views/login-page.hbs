@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/login-style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 990px)"
+      href="/css/login-mobile.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/db43bea50c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>SCREEN-LOGIN</title>
+  </head>
+  <body>
+    <section>
+      <div class="image-container">
+        <img class="box-image" src="/img/Coffee break-rafiki (1).png" alt="" />
+      </div>
+
+      <div class="box-container">
+        <div class="formulary-container">
+          <header class="title-login">
+            <h1>Login</h1>
+          </header>
+          
+          <form action="/login-registration" method="post">
+
+            <div class="label-field">
+              <label class="information-name class-labels" for="emailLogin">E-mail:</label>
+              <span class="validating-text"></span>
+              <input type="email" class="information-field" name="emailLogin" id="email-login" />
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="label-field" for="password-login">
+              <label class="information-name class-labels" for="passwordLogin">Password:</label>
+              <span class="validating-text"></span>
+              <input type="password" class="information-field" name="passwordLogin" id="password-login"/>
+              <i class="fa-solid fa-lock"></i>
+            </div>
+
+            <div class="message-option class-input">
+              <input type="checkbox" name="check-box" id="check-box1" />
+              <label class="label-checkbox1" for="check-box1">remember me</label>
+
+              <ul>
+                <li><a href="#">Forgot password?</a></li>
+              </ul>
+            </div>
+
+            <div class="box-verified class-input">
+              <button type="submit"id="button-login" class="button-login">Log In</button>
+
+              <input type="checkbox" name="check-box" id="check-box2" />
+              <label class="label-checkbox2" for="check-box2">remember me</label>
+            </div>
+          </form>
+
+          <div class="span-signup">
+            <p class="paragraph-signup">
+              Don't have an account yet? <a href="#">Sign Up</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/public/js/login-script.js"></script>
+  </body>
+</html>

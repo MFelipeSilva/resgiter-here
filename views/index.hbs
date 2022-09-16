@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/css/registration-style.css">
+  <link rel="stylesheet" media="screen and (max-width: 500px)" href="/public/css/registration-mobile.css">
+  <title>PAGE-REGISTRATION</title>
+</head>
+<body>
+  <section>
+
+    <div class="formulary-container">
+
+      <header class="title-registration">
+        <h1>Create your account</h1>
+      </header>
+
+      <div>
+        {{>alerts}}
+      </div>
+       
+      <form action="/registration" method="post">
+
+        <div class="name-content box-content">
+          <label class="label-field" for="nameUser">Name:</label>
+          <input type="text" name="nameUser" id="nameUser" class="information-field" >
+        </div>
+        
+        <div class="email-content box-content">
+          <label class="label-field" for="emailUser">E-mail:</label>
+          <input type="email" name="emailUser" id="emailUser" class="information-field">
+        </div>
+
+        <div class="password-content box-content">
+          <label class="label-field" for="passwordUser">Password:</label>
+          <input type="password" name="passwordUser" id="passwordUser" class="information-field">
+        </div>
+
+        <button type="submit" class="button-registration">Sign In</button>
+
+        <div class="text-redirect">
+          <span>
+            Already have an account? 
+          </span>
+          <a href="/"> <div class="arrow"></div></a>
+          
+        </div>
+          
+      </form>
+    </div>
+
+  </section>
+
+</body>
+</html>

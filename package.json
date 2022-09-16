@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.5",
+    "bcrypt": "^5.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "mysql2": "^2.3.3",
+    "path": "^0.12.7",
+    "sequelize": "^6.21.4"
+  },
+  "devDependencies": {
+    "handlebars": "^4.5.0",
+    "nodemon": "^2.0.19"
+  }
+}
