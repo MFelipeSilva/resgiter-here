@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+require('dotenv').config();
 const path = require('path');
 const bcrypt = require('bcrypt');
 const handlebars = require('handlebars');
@@ -9,7 +10,7 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 const User = require('./src/models/User');
 const database = require('./src/models/db');
-let loginRoute = require('./routes/loginRoute')
+const loginRoute = require('./routes/loginRoute')
 
 const PORT = process.env.PORT || 3000
 
@@ -101,15 +102,17 @@ app.post('/registration', async (req, res)=> {
 
   await database.sequelize.sync();
     
-  const registerUsers = await User.create({
+  
+
+  await User.create({
     name: users[0].name,
     email: users[0].email,
     password: users[0].password
   })
 
   console.log("Validação relizada com sucesso");
-  req.session.success = true;
-  return res.redirect('/login'); 
+  req.session.sucess = true
+  return res.redirect('/login');
 });
 
 
