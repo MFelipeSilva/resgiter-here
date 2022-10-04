@@ -2,7 +2,7 @@
 const express = require('express');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const User = require('../src/models/User');
+const User = require('../src/database/userdata');
 const router = express.Router();
 
 router.use(express.json());
@@ -52,4 +52,4 @@ router.post('/login-registration', async (req, res) => {
     
 })
 
-module.exports = router ;
+module.exports = router;

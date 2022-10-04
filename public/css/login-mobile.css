@@ -54,7 +54,7 @@
 }
 
 .message-option > input[type=checkbox]:checked + .label-checkbox1:before{
-  background-image: url(/img/check-verified.png);
+  background-image: url(/public/assets/check-verified.png);
   background-color: rgb(0, 145, 24);
 }
 

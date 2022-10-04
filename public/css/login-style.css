@@ -171,7 +171,7 @@ ul > li > a {
 }
 
 .box-verified > input[type=checkbox]:checked + .label-checkbox2:before{
-  background-image: url(/public/img/check-verified.png);
+  background-image: url(/public/assets/check-verified.png);
   background-color: rgb(0, 145, 24);
 }
 
